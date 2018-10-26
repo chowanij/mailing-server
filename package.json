@@ -1,0 +1,23 @@
+{
+  "name": "mailing-server",
+  "version": "1.0.0",
+  "description": "mailing server",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "./node_modules/ts-node/dist/bin.js  ./lib/server.ts",
+    "start": "nodemon ./dist/server.js",
+    "prod": "npm run build && npm run start"
+  },
+  "author": "chowanij",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.7",
+    "nodemon": "^1.18.5",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.3"
+  }
+}
